@@ -1,0 +1,75 @@
+
+  span {
+    color: white;
+}
+
+.gridArea{
+  display: grid;
+  grid-template-columns:  2fr 3fr; 
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav  nav"
+  "info  image"
+  "info  image"
+  "info  image"
+  "info  image";
+  grid-gap: 1px;
+  place-items: center;
+  }
+
+nav {
+background-color: rgb(73, 80, 77);
+grid-area: nav;
+align-self: auto;
+overflow: hidden; 
+border-style: dotted;
+empty-cells:hide;
+}
+
+
+.image{
+    grid-area: image;
+   }
+
+  .info{
+      grid-area: info; 
+      background-color: rgba(235, 154, 100, 0.993); 
+      border: thick solid rgb(8, 8, 8); 
+      padding: 2px; 
+      margin: 2px;
+  }
+
+
+
+button {
+  border: thin solid black;
+  background: rgba(231, 157, 19, 0.726);
+  text-align: center;
+  padding: 10px;
+  margin: 7px 11px 10px 10px;
+  list-style-type: none;
+  border-radius: 5px;
+  
+  width: 90px;
+}
+
+button div {
+  background: rgb(255, 239, 196);
+  
+
+}
+
+table{
+    width: 100%;
+    border: thin solid black;
+    border-collapse: collapse;
+}
+
+td {
+    width: 60%;
+    border: thin solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-style: oblique;
+}
+

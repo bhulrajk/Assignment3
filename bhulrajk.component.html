@@ -1,0 +1,41 @@
+
+<ul id="myList">  
+    <section class="gridArea">
+    <nav class="nav">
+        <span>Select a book</span>
+
+    <button *ngFor="let cls of myBooks; let i=index"
+        id='s{{i}}'
+
+        (click)='onClickMe(i)' >
+      {{cls.Name}}
+    </button>
+  </nav>
+    <br>
+    <div *ngFor="let cls of myBooks; let i=index" id='g{{i}}'>
+        <section class="image">
+          <img src="{{cls.image}}">
+        </section>
+        <br>
+    </div>
+    
+   
+        <section class="info">
+    
+          <table *ngFor="let cls of myBooks; let i=index" id='d{{i}}'>
+            <tr><td><strong> Name: </strong></td><td>{{cls.Name}}</td></tr>
+
+              <tr><td><strong>Artist: </strong></td><td>{{cls.author_name}}</td></tr>
+
+              <tr><td><strong>Genre: </strong></td><td>{{cls.genre}}</td></tr>
+
+              <tr><td><strong>Year Released: </strong></td><td>{{cls.Published_year}}</td></tr>
+              
+            </table>
+      <br>
+    </section>
+  </section>
+
+  </ul>
+  
+</body>
